@@ -54,6 +54,7 @@ return [
             'password' => getenv('SIL_DB_PASSWORD'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
+            'unix_socket' => '/tmp/mysql.sock',
             'prefix' => '',
             'strict' => false,
             'engine' => null,
