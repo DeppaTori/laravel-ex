@@ -11,10 +11,10 @@
         <title>Silsilah Keluarga</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="{{asset('public/bootstrap/')}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{asset('bootstrap/')}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="{{asset('public/bootstrap/')}}/css/full-width-pics.css" rel="stylesheet">
+        <link href="{{asset('bootstrap/')}}/css/full-width-pics.css" rel="stylesheet">
 
         <style>
 
@@ -144,7 +144,7 @@
                 width:35px;
                 height:35px;
                 float:left;
-                background-image: url("{{asset('public/img/')}}/no_foto.jpg");
+                background-image: url("{{asset('img/')}}/no_foto.jpg");
                
             }
             .kotak_keluarga .info{
@@ -206,9 +206,9 @@
         </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="{{asset('public/bootstrap/')}}/vendor/jquery/jquery.min.js"></script>
-        <script src="{{asset('public/bootstrap/')}}/vendor/popper/popper.min.js"></script>
-        <script src="{{asset('public/bootstrap/')}}/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="{{asset('bootstrap/')}}/vendor/jquery/jquery.min.js"></script>
+        <script src="{{asset('bootstrap/')}}/vendor/popper/popper.min.js"></script>
+        <script src="{{asset('bootstrap/')}}/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     </body>
 

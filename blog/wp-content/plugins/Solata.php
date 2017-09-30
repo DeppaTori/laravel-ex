@@ -35,10 +35,10 @@ function solata_pam_init(){
         
         $code = $code."".$kataRahasia;
         $code = sha1($code);
-        $url = "http://localhost:50/keluargaku/silsilah/index.php/admin/aksesdariwp/";
+        $url = getenv("SOLATA_URL");
          //$url = "http://keluargaku-rotimisko.rhcloud.com/silsilah/index.php/admin/aksesdariwp/";
         $url = $url."".$code;
-        echo "[[link] Klik di <a href='".$url."' >sini</a> untuk akses ke halaman admin silsilah keluarga";
+        echo " Klik di <a href='".$url."' >sini</a> untuk akses ke halaman admin silsilah keluarga";
         
         
         
