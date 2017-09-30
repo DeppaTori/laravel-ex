@@ -47,8 +47,8 @@ return [
         ],
         'mysql' => [
             'driver' => 'mysql',
-            'port' => '3306',
-            'host' => getenv('SIL_DB_HOST'),
+            'host' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_HOST', env('DB_HOST', 'localhost')),
+            'port' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_PORT', env('DB_PORT', '3306')),
             'database' => getenv('SIL_DB_DB'),
             'username' => getenv('SIL_DB_USER'),
             'password' => getenv('SIL_DB_PASSWORD'),
@@ -60,8 +60,8 @@ return [
         ],
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_HOST', env('DB_HOST', 'localhost')),
-            'port' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_PORT', env('DB_PORT', '3306')),
+            'host' => env(strtoupper(env('DB_SERVICE_NAME', 'PGSQL')) . '_SERVICE_HOST', env('DB_HOST', 'localhost')),
+            'port' => env(strtoupper(env('DB_SERVICE_NAME', 'PGSQL')) . '_SERVICE_PORT', env('DB_PORT', '5432')),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
