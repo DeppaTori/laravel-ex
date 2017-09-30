@@ -31,7 +31,7 @@ define('DB_USER',getenv("SIL_DB_USER"));
 define('DB_PASSWORD',getenv("SIL_DB_PASSWORD"));
 
 /** MySQL hostname */
-define('DB_HOST', env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_HOST', env('DB_HOST', 'localhost')).":".env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_PORT', env('DB_PORT', '3306')));
+define('DB_HOST', 'localhost:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');

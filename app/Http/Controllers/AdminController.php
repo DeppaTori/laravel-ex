@@ -14,6 +14,7 @@ class AdminController extends Controller {
     public function index(Request $request) {
         /// session check
        
+       
         if (!$request->session()->has('solata_user')) {
             return redirect('tidakbolehmasuk');
         }
