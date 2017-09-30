@@ -47,7 +47,7 @@ return [
         ],
         'mysql' => [
             'driver' => 'mysql',
-            'port' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')) . '_SERVICE_PORT', env('DB_PORT', '3306')),
+            'port' => '3306',
             'host' => getenv('SIL_DB_HOST'),
             'database' => getenv('SIL_DB_DB'),
             'username' => getenv('SIL_DB_USER'),
