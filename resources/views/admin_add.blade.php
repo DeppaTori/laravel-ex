@@ -33,7 +33,7 @@
         <div class="span6">
             <div class="widget-box">
                 <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                    <h5>Informasi Keluarga</h5>
+                    <h5>[Label]Informasi Keluarga</h5>
                 </div>
                 <div class="widget-content nopadding">
                     <form action="{{$urlpost}}" method="post" class="form-horizontal">
